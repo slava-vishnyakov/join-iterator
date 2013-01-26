@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "join-iterator"
   gem.homepage = "http://github.com/slava-vishnyakov/join-iterator"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Joins 2 or more arrays by first element into 1 long iterator}
+  gem.description = %Q{Joins 2 or more arrays by first element into 1 long iterator}
   gem.email = "bomboze@gmail.com"
   gem.authors = ["Slava Vishnyakov"]
   # dependencies defined in Gemfile
