@@ -1,6 +1,25 @@
 = join-iterator
 
-Description goes here.
+Takes a few arrays and joins them by first element. Arrays must be sorted!
+
+    a = [[1,11], [2,11], [3,13]]
+    b = [[1,22],         [3,23]]
+    c = [                [3,33]]
+
+    expected = [
+      [ 1, [11,  22, nil] ],
+      [ 2, [11, nil, nil] ],
+      [ 3, [13,  23,  33] ]
+    ]
+
+    result = []
+    
+    join_sorted([a,b,c]) do |line|
+      result << line
+    end
+
+    result.should == expected
+
 
 == Contributing to join-iterator
  
