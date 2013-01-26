@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "join-iterator.gemspec",
     "lib/join-iterator.rb",
     "spec/join-iterator_spec.rb",
     "spec/spec_helper.rb"
