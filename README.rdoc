@@ -1,5 +1,17 @@
 = join-iterator
 
+Implements something like a SQL join for sorted arrays in Ruby:
+
+    Array 1      Array 2
+    [ 1, 'a' ]   [ 1, 'b' ]
+    [ 2, 'c' ]   [ 5, 'd' ]
+    [ 5, 'e' ]
+
+Result:
+    [ 1, ['a', 'b'] ]
+    [ 2, ['c', nil] ]
+    [ 5, ['e', 'd'] ]
+
 Takes a few arrays and joins them by first element. Arrays must be sorted!
 
     a = [[1,11], [2,11], [3,13]]
@@ -20,6 +32,9 @@ Takes a few arrays and joins them by first element. Arrays must be sorted!
 
     result.should == expected
 
+== Installation
+
+    gem install join-iterator
 
 == Contributing to join-iterator
  
